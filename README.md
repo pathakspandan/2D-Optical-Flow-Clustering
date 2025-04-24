@@ -48,4 +48,37 @@ This analysis pipeline quantifies actin dynamics in developing neurons by cluste
 - A high CV indicates higher temporal irregularity in track initiation.
 
 
+---
+
+## Suggested Order of Notebooks
+
+To get started with this analysis pipeline, the following Jupyter notebooks can be explored in the order below:
+
+1. **`Drift_Jitter_Correction_Optical_Flow_2D.ipynb`**  
+   Performs drift correction and photobleaching adjustment, followed by Lucas–Kanade 2D optical flow computation on the smoothed videos.
+
+2. **`Masking.ipynb`**  
+   Demonstrates the semi-manual procedure for extracting and refining neuronal process masks from mean frames.
+
+3. **`Nanoridge_orientation.ipynb`**  
+   Extracts the alignment direction of nanoridges from microscopy images using frequency-based filters.
+
+4. **`Nonuniform_illumination.ipynb`**  
+   Shows how to handle and correct for uneven illumination across the image plane before further analysis.
+
+5. **`Actin tracking demo_manual.ipynb`**  
+   Provides a walkthrough of the actin feature tracking process and shows examples of tracked motion features.
+
+6. **`Cluster Tracking on Glass.ipynb`** and **`Cluster Tracking_Ridges_Testing.ipynb`**  
+   Contain examples of local flow vector clustering and downstream track analysis across different movie conditions (glass vs. nanoridges).
+
+7. **`Anisotropy and Burstiness.ipynb`**  
+   Explores whether actin tracks show directional bias and whether track initiation occurs in bursts.
+
+8. **`Spatial correlation of tracks.ipynb`**  
+   Analyzes spatial relationships between new and existing tracks to assess local clustering or dispersion patterns.
+
+---
+
+
 
